@@ -14,14 +14,14 @@
         header {
             background-color: #02bd21;
             color: #fff;
-            padding: 10px;
+            padding: 11px;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #000000f1;
-            padding: 10px 0;
+            padding: 11px 0;
         }
         nav a {
             color: #ffffff;
