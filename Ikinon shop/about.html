@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Helmy">
 	<title>Welcome - Ikinon Cream Shop</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
@@ -70,5 +73,45 @@
 			</div>
 		</div>
 	</div>
-</body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>			
+	<style>
+		#myBtn {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 30px;
+		  z-index: 99;
+		  font-size: 18px;
+		  border: none;
+		  outline: none;
+		  background-color: rgb(255, 230, 0);
+		  color: white;
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 4px;
+		}
+		
+		#myBtn:hover {
+		  background-color: #555;
+		}
+		</style>
+		<script>
+		let mybutton = document.getElementById("myBtn");
+		
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+	</body>
 </html>
