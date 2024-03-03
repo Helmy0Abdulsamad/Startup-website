@@ -1,0 +1,17 @@
+nav {
+  margin-bottom: 1em !important;
+
+}
+
+.cart {
+  box-shadow: 0 0 5px #cb3362;
+  padding: 20px;
+}
+.tiny{
+  background-color: #cb3362;
+
+}
+.tiny.disabled{
+  background-color: #cb3362;
+}
+
